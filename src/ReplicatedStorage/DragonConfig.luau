@@ -14,10 +14,10 @@ DragonConfig.STAGE_INTERVAL = 1  -- seconds between each stage
 DragonConfig.WILD_TAG = "WildDragon"
 DragonConfig.TAMED_TAG = "TamedDragon"
 
-DragonConfig.Types: { [string]: DragonType } = {
+DragonConfig.Types = {
 	Ember = { displayName = "Ember Dragon", difficulty = 0.15 },
 	Frost = { displayName = "Frost Dragon", difficulty = 0.25 },
 	Storm = { displayName = "Storm Dragon", difficulty = 0.40 },
-}
+} :: { [string]: DragonType }
 
 return DragonConfig
